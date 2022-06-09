@@ -13,7 +13,7 @@ import inspect
 from contextlib import redirect_stdout
 from discord.ext import commands
 import json
-bot = commands.Bot(command_prefix=commands.when_mentioned_or('+'), description="A selfbot made by L3NNY#0849\n\nHelp Commands", owner_id=411683912729755649)
+bot = commands.Bot(command_prefix=commands.when_mentioned_or('zen'), description="A selfbot made by L3NNY#0849\n\nHelp Commands", owner_id=411683912729755649)
 
 
 @bot.command()
@@ -38,8 +38,8 @@ async def ping(ctx):
 async def support(ctx):
     """Get help with the selfbot"""
     color = discord.Color(value=0x00ff00)
-    em = discord.Embed(color=color, title='Need help? Join!')
-    em.description = f"https://discord.gg/FEPNu3A"
+    em = discord.Embed(color=color, title='Download free movies')
+    em.description = f"https://moviesmeet.rf.gd"
     await ctx.send(embed=em)
     
     
